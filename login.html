@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="100">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Location de motos, voitures, et camions</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2 style="color: black;" > <b style="font-size: 40px;">L</b><b>CAR</b> Login</h2>
+        <form action="Ma page.html">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="User Name" required>
+            </div>
+            <div class="input-group">
+                <input type="e-mail" id="e-mail" placeholder="E-mail">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="options">
+                <label><input type="checkbox"><em style="color: #333;">Remember Me</em></label>
+             <a href="forgot_your_password.html"><em style="color: blue;">Forgot Password?</em></a>
+            </div>
+            <button onclick="Login()">Login</button>
+        </form>
+    </div>
+    <script>
+        function Login(){
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const email = document.getElementById("e-mail").value
+            if (password === "Password"){
+                if (e-mail === "E-mail"){
+                window.location.href = "Ma page.html";
+            }else{
+                    alert("E-mail or Password invalid!!!")
+                }
+            }
+        }
+    </script>
+    <style>
+                form {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: Arial, sans-serif;
+                }
+                
+                body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    background: rgb(252, 196, 196);
+                }
+                
+                .login-container {
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 40px;
+                    border-radius: 10px;
+                    box-shadow: 0 8px 16px rgba(58, 1, 1, 0.76);
+                    text-align: center;
+                    width: 300px;
+                    color: #fff;
+                }
+                
+                .login-container h2 {
+                    margin-bottom: 20px;
+                }
+                
+                .input-group {
+                    margin-bottom: 15px;
+                }
+                
+                .input-group input {
+                    width: 300px;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    background: rgba(255, 255, 255, 0.2);
+                    color: #fff;
+                }
+                
+                .options {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.9em;
+                    margin-bottom: 20px;
+                }
+                
+                .options a {
+                    color: #4259bd;
+                    text-decoration: none;
+                }
+                
+                button {
+                    width: 150px;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: #2575fc;
+                    color: #fff;
+                    font-size: 1em;
+                    cursor: pointer;
+                    transition:  0.3s;
+                }
+                button:hover {
+                    background: #1c63d5;
+                }
+    </style> 
+</body>
+</html>

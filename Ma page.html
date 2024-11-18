@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="refresh" content="10">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Ma page.css">
+  <title>LCAR</title>
+    
+</head>
+<body><style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 100px;
+}
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+</style> 
+
+  <header>
+    <div class="wrapper">
+      <h1>
+        <b style="font-size: 100px;">L</b>CAR
+      </h1>
+    </div>
+      <nav>
+        <ul>
+         <li><a href="moto.html">MOTO</a></li>
+        <li><a href="voiture.html">VOITURE</a></li>
+         <li><a href="camion.html">CAMION</a></li>
+         <li><a href="about.html" >A PROPOS</a></li>
+        </ul>
+      </nav>
+  </header>
+  <section id="main-image">
+    <div class="wrapper">
+      <h2>Bienvenue chez <b style="font-size: 150px;">L</b>CAR </h2>
+    </div>
+  </section>
+  <section id="Accueil" class="Accueil">
+    <h3>Trouvez les véhicules idéaux pour vos déplacements ! </h3>
+    <h5 style="font-weight: bold; text-align:center "> Nos services</h5>
+    <div class="gallery">
+    <div class="car-container">
+      <div class="carImgs">
+        <div class="vh v1">        
+          <img id="image1"  src="./moto.png" alt="" srcset="">
+          <h6>titre</h6>
+          <div class="description">Available</div>
+          <div class="price stars">
+            60€ / jour
+          </div>
+          <button id="plus1">PLUS</button>
+        </div>
+            <div class="vh v1">        
+              <img  id="image2" src="./VOITURE1.png" alt="" srcset="">
+              <h6>titre</h6>
+              <div class="description">Available</div>
+              <div class="price stars">
+                100€ / jour
+              </div>
+              <button id="plus2">PLUS</button>
+            </div>
+                <div class="vh v1">        
+                  <img  id="image3" src="./CAMION11.png" alt="" srcset="">
+                  <h6>titre</h6>
+                  <div class="description">Available</div>
+                  <div class="price stars">
+                    200€ / jour
+                  </div>
+                  <button id="plus3">PLUS</button>
+                </div>
+                
+      </div>
+      </div>
+    </div>
+    <script>
+      //selection de l'image par son id
+      const image1 = document.getElementById("image1");
+      const image2 = document.getElementById("image2");
+      const image3 = document.getElementById("image3");
+      const plus1 = document.getElementById("plus1");
+      const plus2 = document.getElementById("plus2");
+      const plus3 = document.getElementById("plus3");
+
+      //ajout d'un evenement click et redirection
+      
+      image1.addEventListener('click', () =>{
+        window.location.href = 'moto.html';
+      });
+      image2.addEventListener('click', () =>{
+        window.location.href = 'voiture.html';
+      });
+      image3.addEventListener('click', () =>{
+        window.location.href = 'camion.html';
+      });
+      plus1.addEventListener('click', () =>{
+        window.location.href = 'moto.html'
+      } );
+      plus2.addEventListener('click', () =>{
+        window.location.href = 'voiture.html'
+      } );
+      plus3.addEventListener('click', () =>{
+        window.location.href = 'camion.html'
+      } );
+    </script>
+  
+<footer>
+  <div class="footer">
+    <div class="footer-section about">
+      <h1><b style="font-size: 70px;">L</b style="font-size: 25px;">CAR</h1>
+
+    
+      Information<br>
+      Contact info<br>
+      Follow us
+    </div>
+  </div>
+</footer>
+</body>
+</html>

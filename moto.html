@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="10">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ma page.css">
+    <link rel="stylesheet" href="mon.css">
+    <title>MOTO</title>
+</head>
+<body><style>
+    h1{
+        margin-top: 50px;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .gallery img {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
+    body{
+        background: rgb(252, 196, 196);
+        text-align: center;
+    }
+    nav{
+        background-color:rgb(70, 11, 11);
+        padding: 10px;
+        display: flex;
+        font-display: block;
+        justify-content: space-around;
+        background-position: cover;
+        width: auto;
+    }
+    nav a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+    nav a:hover{
+        background-color: #555;}
+    
+</style>
+<nav>
+    <a href="Ma page.html">Accueil</a>
+    <a href="Voiture.html">Voiture</a>
+    <a href="camion.html">Camion</a>
+    <a href="about.html">A propos</a>
+</nav>
+<header><b style="font-size: 100px; font-weight:bold; font-family:'Times New Roman', Times, serif">L</b><b style="font-size: 50px; font-family:'Times New Roman', Times, serif" >CAR</b></header>
+<h1 style="color: rgb(34, 4, 4); text-align;left;" >Nous louons nos motos <p>à des prix cadeaux !!!!!!!!!!! </p></h1>
+<div class="gallery">
+    <div class="car-container">
+        <div class="carImgs">
+          <div class="vh v1">        
+            <img src="./moto.png" alt="" srcset="">
+            <h6>titre</h6>
+            <div class="description">Available</div>
+            <div class="price stars">
+              40€ / jour
+            </div>
+            <button id="reservation10">Réservation</button>
+          </div>
+              <div class="vh v1">        
+                <img src="./moto2.png" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation9">Réservation</button>
+              </div>
+              <div class="vh v1">        
+                <img src="./MOTO3.png" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation8">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./MOTO4.png" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation7">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./MOTO5.png" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation0">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./MOTO6.png" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation1">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./MOTO7.png" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation2">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./moto2.jpg" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation3">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./moto4.jpg" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation4">Réservation</button>
+              </div><div class="vh v1">        
+                <img src="./moto3.jpg" alt="" srcset="">
+                <h6>titre</h6>
+                <div class="description">Available</div>
+                <div class="price stars">
+                  40€ / jour
+                </div>
+                <button id="reservation">Réservation</button>
+              </div>
+
+                  
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll("button").forEach((button) =>{
+        button.id = 'reservation'
+      });
+      reservation.addEventListener('click', () =>{
+        window.location.href = 'réservation.html'
+      });
+      const reservation = document.getElementById("reservation");
+      reservation.addEventListener('click', () =>{
+        window.location.href = 'réservation.html'
+      });
+    </script>
+    <footer>
+      <div class="footer">
+        <div class="footer-section about">
+          <h1><b style="font-size: 70px;">L</b style="font-size: 25px;">CAR</h1>
+    
+        
+          Information<br>
+          Contact info<br>
+          Follow us
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
